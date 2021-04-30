@@ -4,15 +4,14 @@ public struct MigFramework {
     
     public struct ShimmerView: View {
         
-        @Binding var height: CGFloat
-        @Binding var leadingTrallingSize: CGFloat
-        @State var show: Bool
+        @State var height: CGFloat
+        @State var leadingTrallingSize: CGFloat
+        @State private var show = false
         let center = (UIScreen.main.bounds.width / 2) + 110
         
-        public init(height: Binding<CGFloat>, leadingTrallingSize: Binding<CGFloat>, show: Bool) {
-            self._height = height
-            self._leadingTrallingSize = leadingTrallingSize
-            self._show = State(initialValue: show)
+        public init(height: CGFloat, leadingTrallingSize: CGFloat) {
+            self.height = height
+            self.leadingTrallingSize = leadingTrallingSize
         }
         
         
