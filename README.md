@@ -54,3 +54,4 @@ ForEach(0...10,id: \.self){_ in
    MigFramework.ShimmerView(height: 40, leadingTrallingSize: 0)
 }
 ```
+<p align="center"><img src="./Supplements/shimmering.gif" width="360"/></p>
